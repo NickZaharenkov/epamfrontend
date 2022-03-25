@@ -1,0 +1,76 @@
+body {
+  background-color: grey;
+}
+
+.alltasks {
+  display: flex;
+}
+
+.task {
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgb(67, 185, 179);
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#square {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 2px solid rgb(0, 4, 255);
+}
+
+#ball {
+  background: rgb(0, 60, 255);
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: absolute;
+  animation: animation 2s infinite;
+}
+
+@keyframes animation {
+  20%,
+  40%,
+  60%,
+  80%,
+  95% {
+    animation-timing-function: ease-out;
+    bottom: 0;
+  }
+  0% {
+    bottom: 220px;
+    left: 0;
+    animation-timing-function: ease-in;
+  }
+  30% {
+    bottom: 100px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    bottom: 70px;
+    animation-timing-function: ease-in;
+  }
+  70% {
+    bottom: 50px;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    bottom: 5px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    left: 90px;
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+}

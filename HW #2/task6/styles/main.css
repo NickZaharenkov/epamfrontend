@@ -1,0 +1,64 @@
+body {
+  background-color: grey;
+}
+
+.alltasks {
+  display: flex;
+}
+
+.task {
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgb(67, 185, 179);
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#square1 {
+    border: 2px solid rgb(17, 0, 255);
+    width: 70px;
+    height: 70px;
+}
+
+#square1 {
+  animation: animation 3s linear 30;
+}
+
+#square2 {
+    border: 2px solid rgb(17, 0, 255);
+    width: 70px;
+    height: 70px;
+}
+
+#square2 {
+  animation: animation2 3s infinite alternate;
+}
+
+@keyframes animation{
+    0% {
+        margin-left: 0%;
+      }
+      50% {
+        margin-left: 50%;
+      }
+      100% {
+        margin-left: 0%;
+      }
+}
+
+@keyframes animation2{
+    0% {
+        margin-left: 0%;
+      }
+      100% {
+        margin-left: 50%;
+      }
+}
