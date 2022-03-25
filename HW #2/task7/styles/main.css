@@ -1,0 +1,68 @@
+body {
+  background-color: grey;
+}
+
+.alltasks {
+  display: flex;
+}
+
+.task {
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgb(67, 185, 179);
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+#loading1 {
+  width: 50%;
+  height: 50px;
+  border: 2px solid rgb(38, 0, 255);
+}
+
+#loading2 {
+  width: 50%;
+  height: 50px;
+  border: 2px solid rgb(25, 0, 255);
+}
+
+#color1 {
+  background: rgb(4, 0, 255);
+  width: 0%;
+  height: 50px;
+  animation: color1 3s linear 1 forwards;
+}
+
+#color2 {
+  background: rgb(0, 17, 255);
+  width: 0%;
+  height: 50px;
+  -webkit-animation: color2 16s linear infinite -8s;
+  animation: color2 3s linear infinite -8s;
+}
+
+@keyframes color1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes color2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background-color: grey;
+}
+
+.alltasks {
+  display: flex;
+}
+
+.task {
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgb(67, 185, 179);
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#square {
+  border: 2px solid rgb(0, 47, 255);
+  width: 70px;
+  height: 70px;
+}
+#square {
+  animation: animation 3s 3;
+}
+
+div {
+  display: block;
+}
+
+@keyframes animation {
+  0% {
+    margin-left: 5px;
+  }
+  100% {
+    margin-left: 450px;
+  }
+}
