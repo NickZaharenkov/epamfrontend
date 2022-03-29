@@ -2,63 +2,70 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #37474f;
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin-top: -10px;
 }
-
 h2 {
   font-size: 1.2em;
 }
 
+.nav-img {
+  width: 90%;
+  height: auto;
+  margin: 15px 0 15px 15px;
+}
+
 header {
   background-color: #546e7a;
-  width: 1800px;
+  width: 100%;
   padding: 1px;
   text-align: center;
   color: #eee;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.2em;
-  height: 50px;
+  font-size: 1.3em;
 }
 
 .main {
   color: #eee;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1em;
-  margin: 0;
+  font-size: 1.2em;
+  margin: 15px;
 }
 
 #nav {
   background-color: #37474f;
-  margin-right: -5px;
-  padding-left: 15px;
-  width: 280px;
-  display: inline-block;
+  width: 17%;
+  display: block;
   color: #eee;
-  font-size: 1.2em;
-  height: 800px;
-  vertical-align: top;
+  font-size: 1.4em;
+  float: left;
+  height: 736px;
 }
 
-img {
-  max-width: 90%;
-  margin: 15px 15px 15px 5px;
+.nav-main-detail-line {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #sidebar {
   background-color: #546e7a;
-  display: inline-block;
-  width: 1520px;
-  font-size: 1.1em;
-  height: 800px;
-  padding-top: 5px;
-  padding-left: 15px;
+  float: right;
+  display: block;
+  width: 83%;
+  float: left;
+}
+
+th {
+  padding-right: 25px;
 }
 
 td {
@@ -66,26 +73,61 @@ td {
   padding-bottom: 20px;
 }
 
+tr {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
-  color: #eee;
+  color: rgb(165, 176, 243);
 }
 
 a:hover {
   color: aquamarine;
-  cursor: pointer;
 }
 
-footer {
+#foot {
   background-color: #37474f;
-  width: 1800px;
+  width: 100%;
   text-align: center;
+  padding: 1px;
   color: #eee;
-  padding: 10px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  clear: left;
 }
 
-img:last-child {
-  margin-top: 30px;
+@media only screen and (max-width: 800px) {
+  #nav {
+    background-color: #37474f;
+    width: 100%;
+    height: auto;
+  }
+  #foot {
+    width: 100%;
+    background-color: #37474f;
+  }
+  #sidebar {
+    width: 100%;
+    background-color: #546e7a;
+  }
+  header {
+    width: 100%;
+    background-color: #37474f;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #nav {
+    background-color: #37474f;
+    width: 100%;
+  }
+  #foot {
+    width: 83%;
+    background-color: #37474f;
+  }
+  header {
+    width: 83%;
+    background-color: #37474f;
+  }
 }
