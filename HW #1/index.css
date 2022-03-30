@@ -97,10 +97,15 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 400px) {
-  body {
+@media (min-width: 660px) {
+  header,
+  footer {
+    width: 100%;
+    flex-direction: row;
     min-height: 100%;
+    flex: 1 1 auto;
   }
+
   main {
     flex-direction: row;
     min-height: 100%;
