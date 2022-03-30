@@ -10,17 +10,19 @@ body {
 }
 
 h1 {
-  font-size: 1.4em;
-  margin-top: -10px;
-}
-h2 {
   font-size: 1.2em;
+  margin-top: -20px;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: -10px;
 }
 
 .nav-img {
   width: 90%;
   height: auto;
-  margin: 15px 0 15px 15px;
+  margin: 15px 15px 15px 15px;
 }
 
 header {
@@ -36,18 +38,15 @@ header {
 .main {
   color: #eee;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 15px;
 }
 
 #nav {
   background-color: #37474f;
-  width: 17%;
-  display: block;
   color: #eee;
   font-size: 1.4em;
   float: left;
-  height: 736px;
 }
 
 .nav-main-detail-line {
@@ -58,28 +57,18 @@ header {
 
 #sidebar {
   background-color: #546e7a;
-  float: right;
-  display: block;
   width: 83%;
-  float: left;
-}
-
-th {
-  padding-right: 25px;
-}
-
-td {
-  padding-right: 30px;
-  padding-bottom: 20px;
-}
-
-tr {
-  text-align: center;
+  float: right;
+  font-size: 1.2em;
 }
 
 a {
   text-decoration: none;
   color: rgb(165, 176, 243);
+}
+
+p {
+  padding-bottom: 10px;
 }
 
 a:hover {
@@ -92,42 +81,24 @@ a:hover {
   text-align: center;
   padding: 1px;
   color: #eee;
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  clear: left;
+  float: left;
 }
 
-@media only screen and (max-width: 800px) {
-  #nav {
-    background-color: #37474f;
-    width: 100%;
-    height: auto;
-  }
-  #foot {
-    width: 100%;
-    background-color: #37474f;
-  }
+@media (min-width: 320px) and (max-width: 1500px) {
   #sidebar {
     width: 100%;
     background-color: #546e7a;
+    float: none;
+    padding: 10px;
+    text-align: justify;
   }
-  header {
-    width: 100%;
-    background-color: #37474f;
-  }
-}
 
-@media only screen and (max-width: 400px) {
   #nav {
-    background-color: #37474f;
     width: 100%;
-  }
-  #foot {
-    width: 83%;
     background-color: #37474f;
-  }
-  header {
-    width: 83%;
-    background-color: #37474f;
+    float: none;
+    padding: 50px 0 0 50px;
   }
 }
